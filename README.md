@@ -6,10 +6,3 @@ Parcial 2 de Fundamentos de Analitica
 
 [Red Neuronal](/Red%20Neuronal.ipynb)
 
-
-
-
-
-
-Link a arhivo de Red Neuronal
-... la conclusion es que esto se demora mucho
