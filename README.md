@@ -28,3 +28,7 @@ Los modelos que hemos entrenado y evaluado incluyen:
 - [LG](/10_LG/10_LG_Pycaret.ipynb)
 - [Red Neuronal](/Red%20Neuronal.ipynb)
 
+
+## ** Conclusiones**
+
+
