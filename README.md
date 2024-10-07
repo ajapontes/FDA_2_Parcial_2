@@ -70,8 +70,13 @@ Modelo|	ROC_AUC
 |XG_Pycaret (XG Boost) |	0.81|
 |Red Neuronal_Alfredo |	Pendiente|
 
-## ** Conclusiones**
+## **Conclusiones**
 
 - Fue necesario fragmentar el conjunto de datos de entrenamiento para poder ejecutar los modelos SVC y MLP utilizando Sklearn, debido a las limitaciones en términos de tiempo de procesamiento y memoria que estos modelos presentan al trabajar con datasets grandes.
 
 - Los modelos de clasificación basados en árboles de decisión resultaron ser significativamente más efectivos tanto en términos de tiempo de procesamiento como en la métrica de ROC AUC, superando el desempeño de los modelos SVC y MLP. Estos modelos demostraron ser una opción más eficiente y efectiva para este caso particular.
+
+- Modelos mas robustos, no nos generaron un mejor ROC, modelos mas basicos generaron mejores resultados.
+
+- Un punto a tener en cuenta, que nos vamos a encontrar en el futuro es la cantidad de datos, en este caso teniamos casi 28.000 muestras o registros y todos los modelos fueron lentos al momento de correr, analizando el caso pensabamos, de "que hubiera ocurrido si el set de datos tuviera 1.000.000 de registros?", el enfoque inicial hubiera estado en optimizar la seleccion de registros. Utilizar mecanismos como mini-batch learning, nos permitirían haces esta seleccion y desde seguir a los pasos siguientes del pipeline.
+
