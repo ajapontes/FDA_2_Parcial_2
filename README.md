@@ -57,25 +57,16 @@ Este modelo sí será tenido en cuenta en los submissions de kaggle por sus buen
 
 - [Red Neuronal](/Red%20Neuronal.ipynb)
 
---------------------------------------------
+------|-------------------------------------
 Modelo|	ROC_AUC
---------------------------------------------
 |SVC (manual)|	0.61|
---------------------------------------------
 |SVC_linear_Pycaret|	0.50|
---------------------------------------------
 |SVC_radial_Pycaret|	No corre|
---------------------------------------------
 |MLP (manual)|	0.61|
---------------------------------------------
 |RF_Pycaret (random forest)|	0.82|
---------------------------------------------
 |ET_Pycaret (Extra tree clasifier)|	0.81|
---------------------------------------------
 |XG_Pycaret (XG Boost) |	0.81|
---------------------------------------------
 |Red Neuronal_Alfredo |	Pendiente|
---------------------------------------------
 
 ## ** Conclusiones**
 
