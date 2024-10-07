@@ -21,11 +21,11 @@ Estos problemas de calidad de datos fueron corregidos de manera cuidadosa, imple
 
 Los modelos que hemos entrenado y evaluado incluyen:
 
-- [Support Vector Clasifier](/SVC.ipynb), al aplicarlo manualmente, surgieron dificultades al intentar ajustar sus hiperparámetros debido al tamaño considerable del conjunto de datos de entrenamiento. Para superar este inconveniente, se decidió trabajar con el 10% del dataset y utilizar las variables recomendadas por una médica experta. Esta estrategia permitió mejorar la velocidad del proceso de optimización de hiperparámetros, logrando identificar los mejores parámetros de forma más eficiente.
+- [Support Vector Classifier](/SVC.ipynb), al aplicarlo manualmente, surgieron dificultades al intentar ajustar sus hiperparámetros debido al tamaño considerable del conjunto de datos de entrenamiento. Para superar este inconveniente, se decidió trabajar con el 10% del dataset y utilizar las variables recomendadas por una médica experta. Esta estrategia permitió mejorar la velocidad del proceso de optimización de hiperparámetros, logrando identificar los mejores parámetros de forma más eficiente.
 
     Sin embargo, esta reducción del conjunto de datos impactó negativamente en los resultados del modelo, obteniendo un valor de ROC AUC de 0.61, lo cual está por debajo de lo esperado. Dado este rendimiento subóptimo, se tomó la decisión de no considerar este modelo en los envíos finales de Kaggle, ya que sus resultados no cumplen con los estándares requeridos.
 
-- [Support Vector Clasiffier Linear de Pycaret](/03_SVC_linear_pycaret/), al utilizar Pycaret, el modelo se ajustó y optimizó automáticamente empleando la totalidad del conjunto de datos de entrenamiento. Después de varias horas de procesamiento, el resultado obtenido fue un valor de ROC AUC de 0.50, un desempeño claramente insuficiente. Por este motivo, se decidió no considerar este modelo en los envíos de Kaggle debido a sus bajos resultados.
+- [Support Vector Classifier Linear de Pycaret](/03_SVC_linear_pycaret/), al utilizar Pycaret, el modelo se ajustó y optimizó automáticamente empleando la totalidad del conjunto de datos de entrenamiento. Después de varias horas de procesamiento, el resultado obtenido fue un valor de ROC AUC de 0.50, un desempeño claramente insuficiente. Por este motivo, se decidió no considerar este modelo en los envíos de Kaggle debido a sus bajos resultados.
 
     Adicionalmente, se intentó ajustar un modelo SVC con kernel radial también utilizando PyCaret. Sin embargo, el proceso de ajuste nunca llegó a completarse, lo que impidió obtener resultados concluyentes con este algoritmo.
 
@@ -45,7 +45,7 @@ Los modelos que hemos entrenado y evaluado incluyen:
 
     Como conclusión adicional, se pudo confirmar que el autotuning de PyCaret es una opción eficiente y efectiva para este tipo de modelos, especialmente cuando se requiere optimización en datasets grandes, logrando buenos resultados en un tiempo relativamente corto.
 
-- [ET](/08_et/08_ET_Pycaret.ipynb), ddo que los resultados obtenidos con los modelos SVC y MLP fueron deficientes y demandaron un tiempo considerable de procesamiento, se decidió explorar otros modelos para mejorar el desempeño en términos de ROC AUC. Utilizando PyCaret, se ajustó y optimizó automáticamente un nuevo modelo con la totalidad del conjunto de datos de entrenamiento. En solo unos minutos de procesamiento, se alcanzó un valor de ROC AUC de 0.81, un resultado mucho más favorable que los obtenidos previamente.
+- [Extra tree clasifier con Pycaret](/08_et/08_ET_Pycaret.ipynb), ddo que los resultados obtenidos con los modelos SVC y MLP fueron deficientes y demandaron un tiempo considerable de procesamiento, se decidió explorar otros modelos para mejorar el desempeño en términos de ROC AUC. Utilizando PyCaret, se ajustó y optimizó automáticamente un nuevo modelo con la totalidad del conjunto de datos de entrenamiento. En solo unos minutos de procesamiento, se alcanzó un valor de ROC AUC de 0.81, un resultado mucho más favorable que los obtenidos previamente.
 
     Este modelo mostró un rendimiento satisfactorio, por lo que fue seleccionado para ser considerado en los envíos de Kaggle debido a sus buenos resultados.
 
@@ -55,10 +55,12 @@ Los modelos que hemos entrenado y evaluado incluyen:
 
     Este modelo sí será tenido en cuenta en los submissions de kaggle por sus buenos resultados.  Como conclusión adicional, se puede confirmar que el autotuneo de Pycaret sí  es una buena opción para este tipo de modelos.
 
-- [Red Neuronal](/Red%20Neuronal.ipynb)
+- [Red Neuronal](/Red%20Neuronal.ipynb), se entrenó una red neuronal con el objetivo de optimizar sus hiperparámetros utilizando un enfoque de optimización bayesiana. No obstante, debido al alto consumo de tiempo, no fue factible aplicar este proceso a todo el conjunto de datos. Para superar esta limitación, se trabajó con un subconjunto del dataset original, lo que permitió ejecutar el algoritmo de manera más eficiente.
 
-------|-------------------------------------
+    Como resultado, se obtuvo un valor de ROC AUC de 0.73, lo cual representa un rendimiento razonable dadas las restricciones impuestas por el tiempo y los recursos disponibles.
+
 Modelo|	ROC_AUC
+------|-------------------------------------
 |SVC (manual)|	0.61|
 |SVC_linear_Pycaret|	0.50|
 |SVC_radial_Pycaret|	No corre|
