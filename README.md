@@ -23,13 +23,13 @@ Los modelos que hemos entrenado y evaluado incluyen:
 
 - [Support Vector Clasifier](/SVC.ipynb), al aplicarlo manualmente, surgieron dificultades al intentar ajustar sus hiperparámetros debido al tamaño considerable del conjunto de datos de entrenamiento. Para superar este inconveniente, se decidió trabajar con el 10% del dataset y utilizar las variables recomendadas por una médica experta. Esta estrategia permitió mejorar la velocidad del proceso de optimización de hiperparámetros, logrando identificar los mejores parámetros de forma más eficiente.
 
-Sin embargo, esta reducción del conjunto de datos impactó negativamente en los resultados del modelo, obteniendo un valor de ROC AUC de 0.61, lo cual está por debajo de lo esperado. Dado este rendimiento subóptimo, se tomó la decisión de no considerar este modelo en los envíos finales de Kaggle, ya que sus resultados no cumplen con los estándares requeridos.
+    Sin embargo, esta reducción del conjunto de datos impactó negativamente en los resultados del modelo, obteniendo un valor de ROC AUC de 0.61, lo cual está por debajo de lo esperado. Dado este rendimiento subóptimo, se tomó la decisión de no considerar este modelo en los envíos finales de Kaggle, ya que sus resultados no cumplen con los estándares requeridos.
 
 - [Support Vector Clasiffier Linear de Pycaret](/03_SVC_linear_pycaret/), al utilizar Pycaret, el modelo se ajustó y optimizó automáticamente empleando la totalidad del conjunto de datos de entrenamiento. Después de varias horas de procesamiento, el resultado obtenido fue un valor de ROC AUC de 0.50, un desempeño claramente insuficiente. Por este motivo, se decidió no considerar este modelo en los envíos de Kaggle debido a sus bajos resultados.
 
-Adicionalmente, se intentó ajustar un modelo SVC con kernel radial también utilizando PyCaret. Sin embargo, el proceso de ajuste nunca llegó a completarse, lo que impidió obtener resultados concluyentes con este algoritmo.
+    Adicionalmente, se intentó ajustar un modelo SVC con kernel radial también utilizando PyCaret. Sin embargo, el proceso de ajuste nunca llegó a completarse, lo que impidió obtener resultados concluyentes con este algoritmo.
 
-Como conclusión, se pudo confirmar que el autotuning de PyCaret no es una opción adecuada para este tipo de modelos en datasets grandes y complejos. En su lugar, se recomienda realizar un ajuste manual de la arquitectura para obtener mejores resultados en términos de rendimiento y eficiencia.
+    Como conclusión, se pudo confirmar que el autotuning de PyCaret no es una opción adecuada para este tipo de modelos en datasets grandes y complejos. En su lugar, se recomienda realizar un ajuste manual de la arquitectura para obtener mejores resultados en términos de rendimiento y eficiencia.
 
 - [MLP](/05_tutoria-1-af-ii-2024-ii-svc.ipynb)
 - [MLP desde Pycaret](/06_MLP_pycaret/06_MLP_pycaret.ipynb)
