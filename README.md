@@ -53,7 +53,7 @@ Los modelos que hemos entrenado y evaluado incluyen:
 
 - [XGBoost](/09_XG/09_XG_Pycaret.ipynb), dado que los resultados de SVC y MLP fueron pobres y demorados, exploramos con otros modeles diferentes para poder obtener mejores ROC_AUC.  Se ajusta y tunea el modelo en referencia, automáticamente con Pycaret con todo el dataset de entrenamiento y después tan solo unos minutos de procesamiento, el resultado es un roc_auc es de 0.81.  
 
-Este modelo sí será tenido en cuenta en los submissions de kaggle por sus buenos resultados.  Como conclusión adicional, se puede confirmar que el autotuneo de Pycaret sí  es una buena opción para este tipo de modelos.
+    Este modelo sí será tenido en cuenta en los submissions de kaggle por sus buenos resultados.  Como conclusión adicional, se puede confirmar que el autotuneo de Pycaret sí  es una buena opción para este tipo de modelos.
 
 - [Red Neuronal](/Red%20Neuronal.ipynb)
 
