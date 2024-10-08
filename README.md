@@ -21,7 +21,7 @@ Estos problemas de calidad de datos fueron corregidos de manera cuidadosa, imple
 
 Los modelos que hemos entrenado y evaluado incluyen:
 
-- [Support Vector Classifier](/SVC.ipynb), al aplicarlo manualmente, surgieron dificultades al intentar ajustar sus hiperparámetros debido al tamaño considerable del conjunto de datos de entrenamiento. Para superar este inconveniente, se decidió trabajar con el 10% del dataset y utilizar las variables recomendadas por una médica experta. Esta estrategia permitió mejorar la velocidad del proceso de optimización de hiperparámetros, logrando identificar los mejores parámetros de forma más eficiente.
+- [Support Vector Classifier](/02_SVC/02_SVC.ipynb), al aplicarlo manualmente, surgieron dificultades al intentar ajustar sus hiperparámetros debido al tamaño considerable del conjunto de datos de entrenamiento. Para superar este inconveniente, se decidió trabajar con el 10% del dataset y utilizar las variables recomendadas por una médica experta. Esta estrategia permitió mejorar la velocidad del proceso de optimización de hiperparámetros, logrando identificar los mejores parámetros de forma más eficiente.
 
     Sin embargo, esta reducción del conjunto de datos impactó negativamente en los resultados del modelo, obteniendo un valor de ROC AUC de 0.61, lo cual está por debajo de lo esperado. Dado este rendimiento subóptimo, se tomó la decisión de no considerar este modelo en los envíos finales de Kaggle, ya que sus resultados no cumplen con los estándares requeridos.
 
@@ -31,7 +31,7 @@ Los modelos que hemos entrenado y evaluado incluyen:
 
     Como conclusión, se pudo confirmar que el autotuning de PyCaret no es una opción adecuada para este tipo de modelos en datasets grandes y complejos. En su lugar, se recomienda realizar un ajuste manual de la arquitectura para obtener mejores resultados en términos de rendimiento y eficiencia.
 
-- [MLP](/05_tutoria-1-af-ii-2024-ii-svc.ipynb), , al aplicarlo manualmente, se presentaron dificultades para ajustar sus hiperparámetros debido al tamaño considerable del conjunto de datos de entrenamiento. Para mitigar este problema, se optó por trabajar con el 10% del dataset y utilizar las variables sugeridas por una médica experta. Esta estrategia permitió una mayor velocidad en la búsqueda de los mejores hiperparámetros.
+- [MLP](/05_MLP/05_MLP.ipynb), , al aplicarlo manualmente, se presentaron dificultades para ajustar sus hiperparámetros debido al tamaño considerable del conjunto de datos de entrenamiento. Para mitigar este problema, se optó por trabajar con el 10% del dataset y utilizar las variables sugeridas por una médica experta. Esta estrategia permitió una mayor velocidad en la búsqueda de los mejores hiperparámetros.
 
     Sin embargo, la reducción del conjunto de datos tuvo un impacto negativo en el rendimiento del modelo, obteniendo un valor de ROC AUC de 0.61, un resultado por debajo de las expectativas. Por lo tanto, se tomó la decisión de no considerar este modelo en los envíos finales de Kaggle, debido a su bajo rendimiento.
 
@@ -68,7 +68,7 @@ Modelo|	ROC_AUC
 |RF_Pycaret (random forest)|	0.82|
 |ET_Pycaret (Extra tree clasifier)|	0.81|
 |XG_Pycaret (XG Boost) |	0.81|
-|Red Neuronal_Alfredo |	Pendiente|
+|Red Neuronal_Alfredo |	0.73|
 
 ## **Conclusiones**
 
