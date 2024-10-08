@@ -68,7 +68,7 @@ Modelo|	ROC_AUC
 |RF_Pycaret (random forest)|	0.82|
 |ET_Pycaret (Extra tree clasifier)|	0.81|
 |XG_Pycaret (XG Boost) |	0.81|
-|Red Neuronal_Alfredo |	0.73|
+|Red Neuronal |	0.73|
 
 ## **Conclusiones**
 
